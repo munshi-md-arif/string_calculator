@@ -22,4 +22,12 @@ void main() {
     final calculator = StringCalculator();
     expect(calculator.add('1,2'), equals(3));
   });
+  test('returns sum for any amount of numbers', () {
+    final calculator = StringCalculator();
+    expect(calculator.add('1,2,3,4'), equals(10));
+  });
+  test('supports new lines as delimiters', () {
+    final calculator = StringCalculator();
+    expect(calculator.add('1\n2,3'), equals(6));
+  });
 }
