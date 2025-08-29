@@ -22,3 +22,6 @@ It demonstrates software craftsmanship by producing clean, testable, and maintai
 ### Installation
 
 Clone the repository:
+
+git clone https://github.com/munshi-md-arif/string_calculator.git
+cd string_calculator
