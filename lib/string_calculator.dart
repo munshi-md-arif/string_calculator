@@ -1,9 +1,12 @@
-// int calculate() {
-//   return 6 * 7;
+// class StringCalculator {
+//   int add(String numbers) {
+//     if (numbers.isEmpty) return 0;
+//     return int.parse(numbers);
+//   }
 // }
 class StringCalculator {
   int add(String numbers) {
     if (numbers.isEmpty) return 0;
-    return int.parse(numbers);
+    return numbers.split(',').map(int.parse).reduce((a, b) => a + b);
   }
 }

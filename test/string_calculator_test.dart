@@ -18,4 +18,8 @@ void main() {
     final calculator = StringCalculator();
     expect(calculator.add('1'), equals(1));
   });
+  test('returns sum for comma separated numbers', () {
+    final calculator = StringCalculator();
+    expect(calculator.add('1,2'), equals(3));
+  });
 }
