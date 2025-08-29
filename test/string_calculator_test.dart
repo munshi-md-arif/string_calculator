@@ -14,4 +14,8 @@ void main() {
     final calculator = StringCalculator();
     expect(calculator.add(''), equals(0));
   });
+  test('returns the number for single input', () {
+    final calculator = StringCalculator();
+    expect(calculator.add('1'), equals(1));
+  });
 }
